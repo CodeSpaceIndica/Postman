@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "5a12e0be-dc5e-49ab-895b-2105c181d077",
+		"name": "Matkarma APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01 IP Address to GEO Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.matkarma.in/services/ipaddr/ipaddr_to_loc.php?ip=142.250.67.68",
+					"protocol": "https",
+					"host": [
+						"api",
+						"matkarma",
+						"in"
+					],
+					"path": [
+						"services",
+						"ipaddr",
+						"ipaddr_to_loc.php"
+					],
+					"query": [
+						{
+							"key": "ip",
+							"value": "142.250.67.68"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02 Indian PIN Code to GEO Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.matkarma.in/services/pin/pin_to_loc.php?pin=737101",
+					"protocol": "https",
+					"host": [
+						"api",
+						"matkarma",
+						"in"
+					],
+					"path": [
+						"services",
+						"pin",
+						"pin_to_loc.php"
+					],
+					"query": [
+						{
+							"key": "pin",
+							"value": "737101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03 Current Fuel Prices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.matkarma.in/services/fuel/curr_fuel_prices.php?all=yes",
+					"protocol": "https",
+					"host": [
+						"api",
+						"matkarma",
+						"in"
+					],
+					"path": [
+						"services",
+						"fuel",
+						"curr_fuel_prices.php"
+					],
+					"query": [
+						{
+							"key": "all",
+							"value": "yes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04 Historical Fuel Prices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.matkarma.in/services/fuel/hist_fuel_prices.php?date=2021-05-28&all=Yes",
+					"protocol": "https",
+					"host": [
+						"api",
+						"matkarma",
+						"in"
+					],
+					"path": [
+						"services",
+						"fuel",
+						"hist_fuel_prices.php"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2021-05-28"
+						},
+						{
+							"key": "all",
+							"value": "Yes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05 Number to Indic Text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.matkarma.in/services/utils/number_to_text.php?num=123456.25",
+					"protocol": "https",
+					"host": [
+						"api",
+						"matkarma",
+						"in"
+					],
+					"path": [
+						"services",
+						"utils",
+						"number_to_text.php"
+					],
+					"query": [
+						{
+							"key": "num",
+							"value": "123456.25"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
